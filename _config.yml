@@ -1,11 +1,11 @@
 # Site settings
-author: Seyma  Tas
-title: 
+author: Seyma Tas
+title: Data Science Insights
 header-img: img/home-bg.png
 email: seymatas@gmail.com
-copyright_name: Seyma  Tas
+copyright_name: Seyma Tas
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Just some observations
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  seyma-tas
