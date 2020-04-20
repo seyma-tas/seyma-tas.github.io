@@ -38,7 +38,7 @@ df=sns.load_dataset('tips')
 df.head()
 ```
 
-picture df.head
+
 
 ![dataframe head](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/df.png)
                                
@@ -178,20 +178,21 @@ I welcome feedback and constructive criticism and can be reached on Gmail seymat
 
 ### Sources:
 
-[](http://en.wikipedia.org/wiki/Joint_probability_distribution)
-[](http://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/)
 
-https://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/
+[http://en.wikipedia.org/wiki/Joint_probability_distribution](http://en.wikipedia.org/wiki/Joint_probability_distribution)
 
-https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset
+[http://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/]
+(http://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/)
 
-http://www.stat.yale.edu/Courses/1997-98/101/linreg.htm
+[https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset](https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset)
 
-https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/regression-library/a/introduction-to-residuals
+[http://www.stat.yale.edu/Courses/1997-98/101/linreg.htm](http://www.stat.yale.edu/Courses/1997-98/101/linreg.htm)
 
-https://mathisonian.github.io/kde/
+[https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/regression-library/a/introduction-to-residuals](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/regression-library/a/introduction-to-residuals)
 
-https://www.mathworks.com/matlabcentral/fileexchange/39486-hexagonal-scatter-plot?focused=3778002&tab=function
+[https://mathisonian.github.io/kde/](https://mathisonian.github.io/kde/)
+
+[https://www.mathworks.com/matlabcentral/fileexchange/39486-hexagonal-scatter-plot?focused=3778002&tab=function](https://www.mathworks.com/matlabcentral/fileexchange/39486-hexagonal-scatter-plot?focused=3778002&tab=function)
 
 https://medium.com/@mattheweparker/visualizing-data-with-hexbins-in-python-39823f89525e
 
