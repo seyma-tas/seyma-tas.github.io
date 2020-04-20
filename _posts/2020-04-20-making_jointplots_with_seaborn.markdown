@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Making Jointplots with Seaborn"
-date:       2020-04-20 15:19:47 +0000
+date:       2020-04-20 11:19:48 -0400
 permalink:  making_jointplots_with_seaborn
 ---
 
@@ -13,7 +13,7 @@ permalink:  making_jointplots_with_seaborn
 Seaborn’s jointplot displays a relationship between two variables (bivariate) as well as one dimensional profiles (univariate) in the margins.
 Seing the correlation of two variables and the distributions of these  variables seperately gives us a very good understanding of data.
 This plot is a convenience class that wraps [JointGrid](http://seaborn.pydata.org/generated/seaborn.JointGrid.html#seaborn.JointGrid). 
-It means (simply) you can use one line of code with jointplot instead of two lines of code in JointGrit.
+It means (simply) you can use one line of code with jointplot instead of many lines of code in JointGrit.
 
 You can refer to the full documentation of seaborn.jointplot() [here](https://seaborn.pydata.org/generated/seaborn.jointplot.html).
 
@@ -40,19 +40,20 @@ df.head()
 
 picture df.head
 
-![](file:///Users/test/Desktop/flatiron/seaborn_pairgrid/jointplot/df.png)
+![dataframe head](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/df.png)
                                
 ## Let's make a joint scatter plot
 
  
-We can make a very satisfying scatter plot by writing a few words of code in seaborn. Default for 'kind' is scatter so we do not need to write the kind of the graph if we want to draw a scatter plot. We see the distributions of total bill and tip on the margins. 
+We can make a very satisfying scatter plot by writing a few words of code in seaborn. Default for 'kind' is scatter so we do not need to write the kind of the graph if we want to draw a scatter plot. We see the distributions of total bill and tip on the margins and we see the correlation of them on the joint at the center.
 
 
 ```
 sns.jointplot(x='total_bill', y='tip',data=df)
 ```
 
-picture 1scatter
+![scatter](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/1scatter.png)
+
 
 
 ## Let's draw a regression plot
@@ -65,7 +66,7 @@ Linear regression attempts to model the relationship between two variables by fi
 sns.jointplot(x='total_bill', y='tip', data=df, kind='reg')
 ```
 
-picture 2regression
+![regresssion](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/2regression.pnghttp://)
 
 ## Let's draw a kernel density estimation plot
 
@@ -75,7 +76,7 @@ Kernel density estimation(KDE) is a useful technique to create a smooth curve gi
 sns.jointplot(x='total_bill', y='tip', data=df, kind='kde')
 ```
 
-picture 3kde
+![kde](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/3kde.png)
 
 
 ## Let's plot the residuals
@@ -86,7 +87,7 @@ A residual is a measure of how well a line fits an individual data point. For da
 sns.jointplot(x='total_bill', y='tip', data=df, kind='resid')
 ```
 
-picture 4residual
+![residuals](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/4residual.png)
 
 
 ## It is time for hexagonals
@@ -99,7 +100,7 @@ gradient indicating the density of each hexagonal area.  White hexagons mean the
 sns.jointplot(x='total_bill', y='tip', data=df, kind='hex')
 ```
 
-picture 5hex
+![hex](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/5hex.png)
 
 ## Going further with parameters
 We will continue with regression plot. 
@@ -112,7 +113,7 @@ The default height of the jointplot is 6 but we can change height by changing th
 sns.jointplot(x='total_bill', y='tip',data=df,kind='reg',height=9)
 ```
 
-picture 6height
+![size](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/6regressionbig.png)
 
 ### Change the ratio of margins according to the whole shape
 
@@ -121,7 +122,7 @@ The default ratio of the jointplot is 5 but we can change ratio of size of graph
 sns.jointplot(x='total_bill', y='tip',data=df,kind='reg',height=9, ratio=10)
 ```
 
-picture 9ratio
+![ratio](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/7regressionratio.png)
 
 ### Change the space between the graphs
 
@@ -130,7 +131,7 @@ We can set space to zero if we don't want to have a space between three graphs.
 sns.jointplot(x='total_bill', y='tip',data=df,kind='reg',space=0)
 ```
 
-picture 10space
+![change_space](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/8regression_space.png)
 
 ### Change the color
 
@@ -140,8 +141,7 @@ We change the color and have more good looking graphs.
 sns.jointplot(x='total_bill', y='tip',data=df,kind='reg', color='brown')
 ```
 
-picture brown
-
+![change color](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/9regression_brown.png)
 ### Change the sizes of  dots and width of lines circulating the dots
 
 There are many good things to do in the parameters of seaborn jointplot. 
@@ -157,8 +157,10 @@ In every kind of graph there are many keywords for joint and marginals. As an ex
 
 
 ```sns.jointplot(x='total_bill', y='tip', data=df, kind='hex', joint_kws={'gridsize':30})
+
 ```
 
+![change grid size](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/11gridsize.png)
 
 ## More about joints and margins:
 
