@@ -66,7 +66,7 @@ Linear regression attempts to model the relationship between two variables by fi
 sns.jointplot(x='total_bill', y='tip', data=df, kind='reg')
 ```
 
-![regresssion](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/2regression.pnghttp://)
+![regresssion](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/2regression.png)
 
 ## Let's draw a kernel density estimation plot
 
@@ -178,7 +178,8 @@ I welcome feedback and constructive criticism and can be reached on Gmail seymat
 
 ### Sources:
 
-https://en.wikipedia.org/wiki/Joint_probability_distribution
+[](http://en.wikipedia.org/wiki/Joint_probability_distribution)
+[](http://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/)
 
 https://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/
 
