@@ -149,7 +149,7 @@ There are many good things to do in the parameters of seaborn jointplot.
 g = sns.jointplot("total_bill", "tip", data=df,s=50, edgecolor="r", linewidth=1)
 ```
 
-picture scatter
+![scatter](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/12change_line.png)
 
 ### What about keywords
 
