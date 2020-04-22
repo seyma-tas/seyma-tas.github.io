@@ -7,11 +7,11 @@ permalink:  making_jointplots_with_seaborn
 
 
 
-**Seaborn** is a very useful data visualisation library built on Matplotlib. It provides a high level interface for drawing attractive and informative statistical graphics. Its beautiful default styles make visualisations easier. It is designed to work very well with Pandas dataframe objects and Numpy arrays. You will wonder how seaborn visualise every thing in your mind with only one line of code.
+**Seaborn** is a very useful data visualization library built on Matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. Its beautiful default styles make visualizations easier. It is designed to work very well with Pandas data frame objects and Numpy arrays. You will wonder how seaborn visualize everything in your mind with only one line of code.
 
 
 Seaborn’s jointplot displays a relationship between two variables (bivariate) as well as one dimensional profiles (univariate) in the margins.
-Seing the correlation of two variables and the distributions of these  variables seperately gives us a very good understanding of data.
+Seing the correlation of two variables and the distributions of these  variables gives us a very good understanding of data.
 This plot is a convenience class that wraps [JointGrid](http://seaborn.pydata.org/generated/seaborn.JointGrid.html#seaborn.JointGrid). 
 It means (simply) you can use one line of code with jointplot instead of many lines of code in JointGrit.
 
@@ -30,7 +30,8 @@ import matplotlib.pyplot as plt
 
 ## Load the seaborn tips dataset
 
-We’ll be using inbuilt dataset provided by seaborn named **tips**. Tips dataset is about the tips given to the servers by customers in the early 90s for one a half month. This dataset is very suitable to show all the wonderful properties of Seaborn. There is a built in method to load the dataset in Seaborn library. Let's use this method and get the dataset.
+We’ll be using inbuilt dataset provided by seaborn named **tips**. Tips dataset is about the tips given to the servers by customers in the early 90s for one and half month. This dataset is very suitable to show all the wonderful properties of Seaborn. There is a built in method to load the dataset in Seaborn library. Let's use this method and get the dataset.
+
 
 
 ```
@@ -45,7 +46,7 @@ df.head()
 ## Let's make a joint scatter plot
 
  
-We can make a very satisfying scatter plot by writing a few words of code in seaborn. Default for 'kind' is scatter so we do not need to write the kind of the graph if we want to draw a scatter plot. We see the distributions of total bill and tip on the margins and we see the correlation of them on the joint at the center.
+We can make a very satisfying scatter plot by writing a few words of code in Seaborn. Default for 'kind' is scatter so we do not need to write the kind of the graph if we want to draw a scatter plot. We see the distributions of total bill and tip on the margins and we see the correlation of them on the joint at the center.
 
 
 ```
@@ -61,7 +62,6 @@ sns.jointplot(x='total_bill', y='tip',data=df)
 Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data. One variable is considered to be an explanatory variable, and the other is considered to be a dependent variable.  If we want to model the correlation of the tips given to the servers and the total bill of the customers we use regression plots to interpret the data much better. The shade around the line shows the confidence level. This level can be changed by changing keyword arguments of *regplot()* which is used in the jointplot graph to draw the regression lines. Now let's add kind to the code line to show regression lines and confidence intervals.
 
 
-
 ```
 sns.jointplot(x='total_bill', y='tip', data=df, kind='reg')
 ```
@@ -70,7 +70,8 @@ sns.jointplot(x='total_bill', y='tip', data=df, kind='reg')
 
 ## Let's draw a kernel density estimation plot
 
-Kernel density estimation(KDE) is a useful technique to create a smooth curve given a set of data. But KDE is not only the shape of data, it is a continous displacement for the discrete histogram. It can also be used to generate points that look like they came from a certain dataset - this behavior can power simple simulations, where simulated objects are modeled off of real data. We can draw the KDE by changing ony three letters.
+Kernel density estimation(KDE) is a useful technique to create a smooth curve given a set of data. But KDE is not only the shape of data, but it is a continous displacement for the discrete histogram. It can also be used to generate points that look like they came from a certain dataset - this behavior can power simple simulations, where simulated objects are modeled off of real data. We can draw the KDE by changing ony three letters.
+
 
 ```
 sns.jointplot(x='total_bill', y='tip', data=df, kind='kde')
@@ -90,11 +91,10 @@ sns.jointplot(x='total_bill', y='tip', data=df, kind='resid')
 ![residuals](https://raw.githubusercontent.com/seyma-tas/seyma-tas.github.io/master/img/4residual.png)
 
 
-## It is time for hexagonals
+## It is time for hexagons
 
-Hexagonal binned scatter plot(hexbin) is fairly uncommon style of graph. 
-a fairly uncommon style of graph called hexbins. Hexbin plots take in lists of X and Y values  and returns what looks somewhat similar to a scatter plot. In a hexbin the entire graphing space has been divided into hexagons and all points have been grouped into their respective hexagonal regions and color tones are added to indicate the density of each 
-gradient indicating the density of each hexagonal area.  White hexagons mean there is no data at that point while dark hexagons mean there is a high density at those points. Hexplots are not very common but they are easier to read than scatter plots.
+
+Hexagonal binned scatter plot(hexbin) is a fairly uncommon style of graphing. Hexbin plots take in lists of X and Y values and return what looks somewhat similar to a scatter plot. In a hexbin the entire graphing space has been divided into hexagons and all points have been grouped into their respective hexagonal regions and color tones are added to indicate the density of each gradient indicating the density of each hexagonal area. White hexagons mean there is no data at that point while dark hexagons mean there is a high density at those points. Hexplots are not very common but they are easier to read than scatter plots.
 
 ```
 sns.jointplot(x='total_bill', y='tip', data=df, kind='hex')
@@ -180,9 +180,7 @@ I welcome feedback and constructive criticism and can be reached on Gmail seymat
 
 
 [http://en.wikipedia.org/wiki/Joint_probability_distribution](http://en.wikipedia.org/wiki/Joint_probability_distribution)
-
-[http://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/]
-(http://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/)
+[http://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/](http://machinelearningmastery.com/joint-marginal-and-conditional-probability-for-machine-learning/)
 
 [https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset](https://www.kaggle.com/ranjeetjain3/seaborn-tips-dataset)
 
@@ -194,5 +192,5 @@ I welcome feedback and constructive criticism and can be reached on Gmail seymat
 
 [https://www.mathworks.com/matlabcentral/fileexchange/39486-hexagonal-scatter-plot?focused=3778002&tab=function](https://www.mathworks.com/matlabcentral/fileexchange/39486-hexagonal-scatter-plot?focused=3778002&tab=function)
 
-https://medium.com/@mattheweparker/visualizing-data-with-hexbins-in-python-39823f89525e
+[https://medium.com/@mattheweparker/visualizing-data-with-hexbins-in-python-39823f89525e](https://medium.com/@mattheweparker/visualizing-data-with-hexbins-in-python-39823f89525e)
 
